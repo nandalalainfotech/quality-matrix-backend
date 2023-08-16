@@ -45,7 +45,8 @@ export class EmployeedetailsService {
     }
     async findAll(): Promise<Employeedetails001mb[]> {
         let data: Employeedetails001mb[] | any;
-        data = await this.employeeRepository.find();
+        data = await this.employeeRepository.find({ relations: ['slNo2']
+            });
         console.log("data--------->dfdf", data); 
         await this.mailService.sendUserConfirmation1(data)
         return data;
