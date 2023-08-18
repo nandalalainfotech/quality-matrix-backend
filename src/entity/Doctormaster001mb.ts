@@ -5,7 +5,7 @@ import { Caseentry001hb } from "./Caseentry001hb";
 import { Caseentry001mb } from "./Caseentry001mb";
 import { DoctormasterDTO } from "src/dto/Doctormaster.dto";
 
-@Entity("doctormaster001mb", { schema: "mmlaser" })
+@Entity("doctormaster001mb", { schema: "qualitymatrix" })
 export class Doctormaster001mb {
   @PrimaryGeneratedColumn({ type: "int", name: "sl_no" })
   slNo: number;

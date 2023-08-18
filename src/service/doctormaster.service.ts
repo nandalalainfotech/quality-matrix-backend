@@ -40,7 +40,7 @@ export class DoctormasterService {
         let data: Doctormaster001mb[] | any;
         data = await this.doctormasterRepository.find();
         // console.log("data--------->dfdf", data); 
-        await this.mailService.sendUserConfirmation1(data)
+      //  await this.mailService.sendUserConfirmation1(data)
         return data;
     }
 

@@ -1,7 +1,7 @@
 import { UserDTO } from "src/dto/User.dto";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("user001hb", { schema: "mmlaser" })
+@Entity("user001hb", { schema: "qualitymatrix" })
 export class User001hb {
   @PrimaryGeneratedColumn({ type: "int", name: "person_id" })
   personId: number;

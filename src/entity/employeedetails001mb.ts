@@ -10,7 +10,7 @@ import { Course001mb } from "./course001mb";
 import { EmployeedetailsDTO } from "src/dto/employeedetails.dto";
 
 @Index("slNo", ["slNo"], {})
-@Entity("employeedetails001mb", { schema: "mmlaser" })
+@Entity("employeedetails001mb", { schema: "qualitymatrix" })
 export class Employeedetails001mb {
     @PrimaryGeneratedColumn({ type: "int", name: "employeeId" })
     employeeId: number;

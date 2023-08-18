@@ -1,7 +1,7 @@
 import { RegionmasterDTO } from "src/dto/Regionmaster.dto";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("regionmaster001mb", { schema: "mmlaser" })
+@Entity("regionmaster001mb", { schema: "qualitymatrix" })
 export class Regionmaster001mb {
   @PrimaryGeneratedColumn({ type: "int", name: "sl_no" })
   slNo: number;

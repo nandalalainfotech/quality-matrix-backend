@@ -41,7 +41,7 @@ export class EmployeedetailsService {
         data = await this.employeeRepository.find({ relations: ['slNo2']
             });
         console.log("data--------->dfdf", data); 
-        await this.mailService.sendUserConfirmation1(data)
+       // await this.mailService.sendUserConfirmation1(data)
         return data;
     }
 

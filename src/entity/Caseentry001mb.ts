@@ -15,7 +15,7 @@ import { CaseentryDTO } from "src/dto/Caseentry.dto";
 
 @Index("appointmentNo", ["appointmentNo"], {})
 @Index("doctorname", ["doctorname"], {})
-@Entity("caseentry001mb", { schema: "mmlaser" })
+@Entity("caseentry001mb", { schema: "qualitymatrix" })
 export class Caseentry001mb {
   @PrimaryGeneratedColumn({ type: "int", name: "caseentryId" })
   caseentryId: number;

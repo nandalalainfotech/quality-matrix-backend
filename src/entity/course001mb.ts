@@ -2,7 +2,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { CourseDTO } from "src/dto/course.dto";
 import { Employeedetails001mb } from "./employeedetails001mb";
 
-@Entity("course001mb", { schema: "mmlaser" })
+@Entity("course001mb", { schema: "qualitymatrix" })
 export class Course001mb {
   @PrimaryGeneratedColumn({ type: "int", name: "slNo" })
   slNo: number;

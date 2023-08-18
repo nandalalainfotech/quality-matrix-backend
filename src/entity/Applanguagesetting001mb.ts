@@ -2,7 +2,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { User001mb } from "./User001mb";
 import { ApplanguagesettingDTO } from "src/dto/Applanguagesetting.dto";
 
-@Entity("applanguagesetting001mb", { schema: "mmlaser" })
+@Entity("applanguagesetting001mb", { schema: "qualitymatrix" })
 export class Applanguagesetting001mb {
   @PrimaryGeneratedColumn({ type: "int", name: "Id" })
   id: number;

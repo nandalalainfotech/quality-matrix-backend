@@ -1,7 +1,7 @@
 import { SystempropertiesDTO } from "../dto/Systemproperties.dto";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("systemproperties001mb", { schema: "mmlaser" })
+@Entity("systemproperties001mb", { schema: "qualitymatrix" })
 export class Systemproperties001mb {
   @PrimaryGeneratedColumn({ type: "int", name: "ID" })
   id: number;

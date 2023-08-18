@@ -1,7 +1,7 @@
 import { MachinemasterDTO } from "src/dto/Machinemaster.dto";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("machinemaster001hb", { schema: "mmlaser" })
+@Entity("machinemaster001hb", { schema: "qualitymatrix" })
 export class Machinemaster001hb {
   @PrimaryGeneratedColumn({ type: "int", name: "sl_no" })
   slNo: number;

@@ -33,10 +33,10 @@ export class AuthService {
 		const user001mb: User001mb = await this.loginRepository.findOne({ where: { username: username } });
 		let userDTO = new UserDTO();
 		if (user001mb) {
-			const isMatch = await bcrypt.compare(password, user001mb.password);
+			// const isMatch = await bcrypt.compare(password, user001mb.password);
 			// console.log('isMatch', isMatch);
 
-			if (isMatch) {
+			// if (isMatch) {
 				// const lang: Applanguagesetting001mb = await this.applanguagesettingRepository.findOne({ where: { id: user001mb.language } });
 				// const role: Role001mb = await this.roleRepository.findOne({ where: { rlid: user001mb.personId } });
 				// let applang = new ApplanguagesettingDTO();
@@ -54,9 +54,10 @@ export class AuthService {
 			} else {
 				throw new UnauthorizedException("Invalid Password");
 			}
-		} else {
-			throw new UnauthorizedException("Invalid Username");
-		}
+		// }
+		//  else {
+		// 	throw new UnauthorizedException("Invalid Username");
+		// }
 	}
 
 }

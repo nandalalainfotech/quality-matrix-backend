@@ -1,7 +1,7 @@
 import { ApplanguagesettingDTO } from "src/dto/Applanguagesetting.dto";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("applanguagesetting001hb", { schema: "mmlaser" })
+@Entity("applanguagesetting001hb", { schema: "qualitymatrix" })
 export class Applanguagesetting001hb {
   @PrimaryGeneratedColumn({ type: "int", name: "Id" })
   id: number;

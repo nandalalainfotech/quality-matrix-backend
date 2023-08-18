@@ -10,7 +10,7 @@ import { Caseentry001mb } from "./Caseentry001mb";
 import { CasemachineDTO } from "src/dto/Casemachine.dto";
 
 @Index("cslno", ["cslno"], {})
-@Entity("casemachine001hb", { schema: "mmlaser" })
+@Entity("casemachine001hb", { schema: "qualitymatrix" })
 export class Casemachine001hb {
   @PrimaryGeneratedColumn({ type: "int", name: "slno" })
   slno: number;
